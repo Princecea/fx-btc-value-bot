@@ -82,8 +82,6 @@ def get_twelve(symbol, interval, limit=250):
     return df.sort_values("datetime").reset_index(drop=True)
 
 def fetch(symbol, source, interval):
-    if source == "crypto":
-        return get_binance("BTCUSDT", interval)
     return get_twelve(symbol, interval)
 
 def analyze(symbol, source):
