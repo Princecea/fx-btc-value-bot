@@ -8,7 +8,7 @@ from telegram import Update
 from telegram.ext import Application, CommandHandler, ContextTypes
 
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
-TWELVE_DATA_API_KEY = os.getenv("TWELVE_DATA_API_KEY")
+ALPHA_VANTAGE_API_KEY = os.getenv("ALPHA_VANTAGE_API_KEY")
 RISK_PERCENT = float(os.getenv("RISK_PERCENT", "0.5"))
 RR = float(os.getenv("RR", "2.0"))
 SCAN_MINUTES = int(os.getenv("SCAN_MINUTES", "15"))
